@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <span id="button" class="button">
+            BUTTON
+        </span><br><br><br>
+        <span id="remove" class="rem">
+            REMOVE
+        </span><br><br><br>
+        <span id="alsoshow" class="button1">
+            Also show image
+        </span>
+        <div id="custom" class="cust">
+            <img src="D:\Projects\Alexandra-Preemp2019\exercises\samsung.jpg" class="img" id="img"/>
+        </div>
+        <script>
+            //ex 1
+            let btn = document.getElementById('button');
+            let image = document.getElementById('img');
+            let body = document.body;
+            let also = document.getElementById("alsoshow");
+            let butn = document.getElementById('remove');
+            var myevent = new Event('custevent');
+            let parinte = document.getElementById('custom');
+
+            btn.addEventListener("click", function(){
+                //image.style.display = "block";
+                // image.classList.add('show');
+                if(document.getElementById('img') === null){
+                    alert("image does not exist");
+                } else {
+                    image.classList.add('show');
+                }
+            });            
+            image.addEventListener('click', function(){
+                //image.style.display = "none";
+                image.classList.remove('show');
+                parinte.dispatchEvent(myevent);
+            });
+            let remove = document.getElementById('remove');
+            remove.addEventListener('click', function(){
+                image.remove();
+            });
+            //gata
+
+            //ex 2
+            body.addEventListener("click", function(event){
+                console.log(event.target, event.currentTarget);
+                alert("Something was clicked");
+            });
+            //gata
+
+            //ex 3  Add another span styled as a button with the label “Also show image” (blue).
+                   //In its event handler trigger the green button’s click event.
+            also.addEventListener("click", function(event){
+                btn.click();
+            })
+            //gata
+
+            //ex 4  
+            
+            parinte.addEventListener('custevent', function(event){
+                console.log('parinteleeee');
+            });
+
+        </script>
+
+    </body>
+</html>

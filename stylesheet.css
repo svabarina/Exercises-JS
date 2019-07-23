@@ -1,0 +1,58 @@
+body {
+    margin-top: 10%;
+}
+
+.button {
+    padding: 10px;
+    display: inline;
+    border-radius: 2px;
+    font-family: "Arial";
+    border: 0;
+    margin: 0 10px;
+    background: green;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    /* width: auto;
+    height: auto; */
+    box-sizing: content-box;
+}
+
+.button1 {
+    padding: 10px;
+    display: inline;
+    border-radius: 2px;
+    font-family: "Arial";
+    border: 0;
+    margin: 0 10px;
+    background: blue;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    box-sizing: content-box;
+}
+
+.img {
+    display: none;
+    height: 120px;
+}
+
+.show {
+    display: block;
+}
+
+.rem {
+    padding: 10px;
+    display: inline;
+    border-radius: 2px;
+    font-family: "Arial";
+    border: 0;
+    margin: 0 10px;
+    background: red;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    /* width: auto;
+    height: auto; */
+    box-sizing: content-box;
+}

@@ -1,0 +1,16 @@
++++ Add a span to an HTML page and style it to appear like a button 
+(make its background color green).
+
++ Add a listener for click events to the button so that when the button is clicked, 
+an image of your choosing is displayed below the button.
+
+The image may be present in the mark-up before the button is clicked, but should be hidden 
+from view.
+- add an event listener for click on the image so it will hide the image when it's clicked
+
+- add another span styled as a button which will remove the image from the page on click
+(make its background color red). Don’t forget to remove the event handler attached to the
+image!
+
+- add a validation to the first event listener so if the image isn't found on the page,
+will alert "image does not exist"
