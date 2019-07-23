@@ -1,0 +1,20 @@
+Exercise 2
+== use exercise 1 as base ==
+- add an event listener on the body which will console.log the target and currentTarget
+of the event and alerts: “Something was clicked”
+Questions:
+How can I make that when the green button is clicked nothing gets logged to the console?
+If I leave the solution from the first question in place, what can I do to have the handler
+of the body called anyway? (observe the order)
+
+Exercise 3
+== use exercise 2 as base ==
+Add another span styled as a button with the label “Also show image” (make it blue).
+In its event handler trigger the green button’s click event.
+
+Exercise 4
+== use exercise 3 as base ==
+Create a custom event.
+Add a parent for the image from your page.
+Add an event handler on that parent for the custom event.
+Dispatch that event on the parent from the image’s click event handler.
