@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <div id="lala">
+            <a href="https://codepen.io/" id="google-link" > link </a>
+        </div>
+    <div id="page" style="padding:20px; border:1px solid blue;">
+        <div id="container" style="padding: 20px; background:green;"></div>
+    </div>
+
+     <!--ori codul ^ , ori asta >> --> 
+    <script>
+        /*window.onload = function(){
+            alert('The page is loaded');
+
+            var link = document.getElementById('google-link');
+            link.onclick = function(){
+                console.log('Clicked on link');
+            };
+        };
+
+        //suprascrie codu d mai sus !!! 
+        window.onload = function(){
+            console.log("fgfg");
+        }
+        */
+    
+        //alt expl
+        // var link = document.getElementById('google-link');
+        // function eventHandler(event){
+        //     console.log(event.type + 'on link', event.target.text);
+        // }
+        // link.addEventListener('mouseenter', eventHandler, {once:true});
+        // link.removeEventListener('mouseenter', eventHandler);
+
+        //alt expl
+        // var link = document.getElementById('google-link');
+        // function eventHandler(event) {console.log(event.type + 'on: ', event.target.nodeName);}
+        // window.addEventListener('click', function(){
+        //     document.documentElement.requestFullscreen();
+        // });
+        // document.addEventListener('fullscreenchange', eventHandler);
+        // link.addEventListener('mouseout', eventHandler);
+
+        //alt expl
+        // var event = new Event('build');
+        // window.addEventListener('build', function(event){
+        //     console.log(event.type);
+        // }, false);
+        // window.dispatchEvent(event);
+
+        //alt expl >> bubbling
+        var container = document.getElementById('container');
+        var page = document.getElementById('page');
+        function eventHandler(event){
+            console.log(event.type + "on" + event.currentTarget.id);
+        }
+        page.addEventListener('click', eventHandler, true); // adding < "true", face intai parintele, apoi copilul, de sus in jos. Asta e Capturing
+        container.addEventListener('click', eventHandler);
+
+        
+    </script>
+    </body>
+</html>
