@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2> CLOSURE FUNCTIONS - JS</h2>
+    </body>
+
+    <script>
+               // expl CLOSURE
+        // function outer (a, b) {
+        //     let groceries = "You bought the following: ";
+        //     function inner () {
+        //         console.log(groceries + a + " & " + b);
+        //     }
+        //     return inner();
+        // }
+        // console.log(outer("apples", "pears"));
+
+
+            // expl CLOSURE
+        // function outer (a) {
+        //     return function inner (b) {
+        //         return a + b;
+        //         }
+        // }
+        // console.log(outer(5)(-1));
+
+
+            // expl 3
+        // array> name, age / 10 valori 
+        // med de varsta intr-o variabila  !!
+        // let arr = [
+        //     {name: 'A', age: 15},
+        //     {name: 'B', age: 100},
+        //     {name: 'C', age: 30},
+        //     {name: 'D', age: 34},
+        //     {name: 'E', age: 14},
+        //     {name: 'F', age: 28},
+        //     {name: 'G', age: 44},
+        //     {name: 'H', age: 22},
+        //     {name: 'I', age: 3},
+        //     {name: 'J', age: 7}
+        //     ]
+            // var 1
+        //     let total = 0;
+        //     for(let i = 0; i < arr.length; i++){
+        //         total = total + arr[i].age;
+        //         }
+        //         g = total/arr.length;
+        //         console.log(g);
+
+
+            // var 2
+            // var total = 0;
+            // arr.forEach(function (obj) {
+            //     total += obj.age;
+            //     });
+            //     console.log(total / arr.length);
+
+
+                //  alt expl
+                var arr = [ 
+                    {fname: 'A', lname: 'B'},
+                    {fname: 'A', lname: 'C'},
+
+                    {fname: 'A', lname: 'D',
+                    fullName: function(fname, lname) {
+                    console.log(this);
+                    if(fname && lname) {
+                        return fname + " " + lname;
+                    }
+                    return this.fname + " " + this.lname;
+                }
+                    }
+                ]
+                console.log(arr[2].fullName());
+
+
+                //  alt expl
+                let calc = {
+            sum() {
+                return Number(this.a) + Number(this.b) + Number(this.c);
+            },
+            mul() {
+                return this.a * this.b * this.c;
+            },
+            read(){
+                this.a = prompt("dfgdf");
+                this.b = prompt("dfgdf");
+                this.c = prompt("dfgdf");
+                
+            }
+        };
+
+        calc.read();
+        alert( calc.sum() );
+        alert( calc.mul() );
+
+
+    </script>
+</html>
