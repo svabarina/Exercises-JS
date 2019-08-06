@@ -1,3 +1,4 @@
+
 var inquirer = require('inquirer');
 var addProduct = require('./src/addProduct');
 var program = require('commander');
