@@ -1,4 +1,4 @@
-const products = require("../src/products.json");
+const products = require("../src/prod.json");
 
 const getProductByID = (req, res) => {
   const product = products.filter(product => {

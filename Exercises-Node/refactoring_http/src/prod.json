@@ -2,63 +2,49 @@
     {
         "id": 1,
         "name": "Missha",
-        "price": "4.00 $"
+        "price": "4.00 $",
+        "img": "prod1.jpg"
     },
     {
         "id": 2,
         "name": "Claire`s Cloud",
-        "price": "20.00 $"
+        "price": "20.00 $",
+        "img": "prod3.jpg"
     },
     {
         "id": 3,
         "name": "Scinic",
-        "price": "4.00 $"
+        "price": "4.00 $",
+        "img": "prod4.jpg"
     },
     {
         "id": 4,
         "name": "Cosrx",
-        "price": "24.00 $"
+        "price": "24.00 $",
+        "img": "prod5.jpg"
     },
     {
         "id": 5,
         "name": "Innisfree Green Tea",
-        "price": "18.00 $"
+        "price": "18.00 $",
+        "img": "prod6.jpg"
     },
     {
         "id": 6,
         "name": "Skin79",
-        "price": "2.00 $"
+        "price": "2.00 $",
+        "img": "prod7.jpg"
     },
     {
         "id": 7,
         "name": "Tonymoly",
-        "price": "8.00 $"
+        "price": "8.00 $",
+        "img": "prod8.jpg"
     },
     {
         "id": 8,
         "name": "Innisfree Canola",
-        "price": "14.00 $"
-    },
-    {
-        "id": 9,
-        "name": "AAAAAA",
-        "price": "4.00 $"
-    },
-    {
-        "id": 10,
-        "name": "BBBBBB",
-        "price": "14.00 $"
-    },
-
-    
-    {
-        "id": 11,
-        "name": "CCCCCC",
-        "price": "24.00 $"
-    },
-    {
-        "id": 12,
-        "name": "DDDDDDDD",
-        "price": "34.00 $"
+        "price": "14.00 $",
+        "img": "prod9.jpg"
     }
 ]

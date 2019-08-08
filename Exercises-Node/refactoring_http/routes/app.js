@@ -1,6 +1,6 @@
 const express = require('express')
-const categ = require("../src/prod.json")
-const prod = require('../src/categories.json')
+const prod = require("../src/prod.json")
+const categ= require('../src/categories.json')
 const https = require('https')
 const app = express()
 const router = express.Router();
